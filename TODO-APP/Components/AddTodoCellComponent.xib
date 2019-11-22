@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wwa-xr-CaB" customClass="AddTodoCellComponentView" customModule="TODO_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zR4-5Y-eib">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2D-k1-cpn">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6r-yR-2wy">
+                            <rect key="frame" x="0.0" y="24.5" width="414" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.84528356790000003" green="0.84528356790000003" blue="0.84528356790000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EWC-0P-hC9"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W9G-xZ-vyC">
+                            <rect key="frame" x="0.0" y="29.5" width="414" height="57.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="h2J-b9-wi7">
+                            <rect key="frame" x="0.0" y="91" width="414" height="162"/>
+                        </datePicker>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zR4-5Y-eib" firstAttribute="bottom" secondItem="wwa-xr-CaB" secondAttribute="bottomMargin" id="CVk-D9-UZI"/>
+                <constraint firstItem="zR4-5Y-eib" firstAttribute="width" secondItem="wwa-xr-CaB" secondAttribute="width" id="MP7-1c-Fkf"/>
+                <constraint firstItem="zR4-5Y-eib" firstAttribute="centerX" secondItem="wwa-xr-CaB" secondAttribute="centerX" id="bEe-yV-ikl"/>
+                <constraint firstItem="zR4-5Y-eib" firstAttribute="height" secondItem="wwa-xr-CaB" secondAttribute="height" id="rZm-By-uOG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="textField" destination="W9G-xZ-vyC" id="glg-av-HVO"/>
+                <outlet property="titleLabel" destination="a2D-k1-cpn" id="tCt-q1-EhY"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="102.79017857142857"/>
+        </view>
+    </objects>
+</document>
